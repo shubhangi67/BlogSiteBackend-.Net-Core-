@@ -47,3 +47,26 @@ msbuild.err
 msbuild.wrn
 appsettings.Development.json
 
+# .NET
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.user
+*.lock
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+*.vs/
+
+# Rider
+.idea/
+
+# Other
+*.tmp
+*.bak
