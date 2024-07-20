@@ -1,5 +1,6 @@
 using System.Text;
 using BlogSite.Data;
+using BlogSite.Dto;
 using BlogSite.Entity;
 using BlogSite.ViewModel.User;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +11,11 @@ namespace BlogSite.Service
     {
         private readonly ApplicationDbContext _context;
         private static Random random = new Random();
-        public UserService(ApplicationDbContext context)
+        private readonly EmailService _emailService;
+        public UserService(ApplicationDbContext context, EmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         public async Task CreateUserAsync(UserCreateViewModel input)
@@ -31,15 +34,21 @@ namespace BlogSite.Service
                 Address = input.Address,
                 CreatedOn = DateTime.Now
             };
-
+            SendEmailDto emailDto = new(){
+                toEmail = input.Email,
+                subject = "Welcome to BlogSite",
+                body = $"Your password is {user.Password}"
+            };
+            await _emailService.SendEmail(emailDto);
             _context.User.Add(user);
             await _context.SaveChangesAsync();
         }
+        
+
         public static string GenerateRandomPassword(int length)
         {
             const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
             StringBuilder password = new StringBuilder();
-
             for (int i = 0; i < length; i++)
             {
                 password.Append(validChars[random.Next(validChars.Length)]);

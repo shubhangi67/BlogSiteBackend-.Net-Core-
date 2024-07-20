@@ -16,16 +16,18 @@ namespace BlogSite.Controller
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAuthorization([FromBody] LoginRequestViewModel input)
+        public async Task<IActionResult> LoginIn([FromBody] LoginRequestViewModel input)
         {
-            return Ok(await _authorizationService.GenerateJwtToken(input));
+            return Ok(await _authorizationService.LoginIn(input));
         }
 
-        [HttpPost("ok")]
-        public async Task<IActionResult> CreateAuthorization11([FromBody] xyz input)
+        [HttpPost]
+        [Route("ResetPassword")]
+        public async Task<IActionResult> ResetPassword([FromBody] LoginRequestViewModel input)
         {
-            await _authorizationService.SendEmail(input.toEmail,input.subject,input.body);
+            await _authorizationService.ResetPassword(input);
             return Ok();
         }
+        
     }
 }

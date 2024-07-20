@@ -48,6 +48,7 @@ builder.Services.AddTransient<BlogService>();
 builder.Services.AddTransient<CategoryService>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<AuthorizationService>();
+builder.Services.AddTransient<EmailService>();
 LoadCORSConfiguration(builder);
 builder.Services.AddCors(options =>
     {

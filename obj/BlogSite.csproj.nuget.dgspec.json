@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {}
+    "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {}
   },
   "projects": {
-    "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {
+    "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
+        "projectUniqueName": "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
         "projectName": "BlogSite",
-        "projectPath": "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
+        "projectPath": "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
         "packagesPath": "C:\\Users\\Shubhangi\\.nuget\\packages\\",
-        "outputPath": "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\obj\\",
+        "outputPath": "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shubhangi\\AppData\\Roaming\\NuGet\\NuGet.Config",
