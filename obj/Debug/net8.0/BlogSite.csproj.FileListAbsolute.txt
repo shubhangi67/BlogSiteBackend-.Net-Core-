@@ -234,3 +234,6 @@ F:\FullStack Projects\BlogSite Project\BlogSite\obj\Debug\net8.0\refint\BlogSite
 F:\FullStack Projects\BlogSite Project\BlogSite\obj\Debug\net8.0\BlogSite.pdb
 F:\FullStack Projects\BlogSite Project\BlogSite\obj\Debug\net8.0\BlogSite.genruntimeconfig.cache
 F:\FullStack Projects\BlogSite Project\BlogSite\obj\Debug\net8.0\ref\BlogSite.dll
+f:\FullStack Projects\BlogSite Project\BlogSite\obj\Debug\net8.0\BlogSite.sourcelink.json
+f:\FullStack Projects\BlogSite Project\BlogSite\bin\Debug\net8.0\EmailValidation.dll
+f:\FullStack Projects\BlogSite Project\BlogSite\bin\Debug\net8.0\SmtpServer.dll

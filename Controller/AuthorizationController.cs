@@ -20,5 +20,12 @@ namespace BlogSite.Controller
         {
             return Ok(await _authorizationService.GenerateJwtToken(input));
         }
+
+        [HttpPost("ok")]
+        public async Task<IActionResult> CreateAuthorization11([FromBody] xyz input)
+        {
+            await _authorizationService.SendEmail(input.toEmail,input.subject,input.body);
+            return Ok();
+        }
     }
 }

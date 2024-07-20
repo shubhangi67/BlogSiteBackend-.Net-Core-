@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "BlogSite/1.0.0": {
         "dependencies": {
+          "EmailValidation": "1.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.7",
           "Microsoft.AspNetCore.OpenApi": "8.0.6",
           "Microsoft.Data.SqlClient": "5.2.1",
@@ -16,6 +17,7 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.0-preview.6.24327.7",
+          "SmtpServer": "10.0.1",
           "Swashbuckle.AspNetCore": "6.4.0",
           "Swashbuckle.AspNetCore.Newtonsoft": "6.6.2"
         },
@@ -55,6 +57,17 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.3.0",
             "fileVersion": "1.1100.324.25704"
+          }
+        }
+      },
+      "EmailValidation/1.2.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/EmailValidation.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
           }
         }
       },
@@ -698,6 +711,17 @@
           }
         }
       },
+      "SmtpServer/10.0.1": {
+        "dependencies": {
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SmtpServer.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -773,6 +797,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "System.ComponentModel.Annotations/5.0.0": {},
       "System.Composition/6.0.0": {
         "dependencies": {
           "System.Composition.AttributedModel": "6.0.0",
@@ -951,6 +976,13 @@
       "sha512": "sha512-4EsGMAr+oog5UqHs46qwA7S/lJiwpXjPBY3t9tQBmJ8nsgmT/LLnrc32eiTlfOdfKxUz4fxBD2YjSnVZacu97w==",
       "path": "azure.identity/1.11.3",
       "hashPath": "azure.identity.1.11.3.nupkg.sha512"
+    },
+    "EmailValidation/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xvCfMeZnkHi7P/2k6E2TL51s5tsM5IMvhjZRrLyrtUnZeAEJtlNSKjM9+BJXsC9JCmeG6fLhq4rQjiDxPgmBxw==",
+      "path": "emailvalidation/1.2.0",
+      "hashPath": "emailvalidation.1.2.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1260,6 +1292,13 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
+    "SmtpServer/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WqSuBsfKGftrioGzC9dPfPFmuRGR1BEH7SX+5+VW3sH/iDHwUSL7eLJiVwYP8OEgEbPSBx27F9J3uDv3zJ+VHw==",
+      "path": "smtpserver/10.0.1",
+      "hashPath": "smtpserver.10.0.1.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",
       "serviceable": true,
@@ -1315,6 +1354,13 @@
       "sha512": "sha512-l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
       "path": "system.collections.immutable/6.0.0",
       "hashPath": "system.collections.immutable.6.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
     },
     "System.Composition/6.0.0": {
       "type": "package",

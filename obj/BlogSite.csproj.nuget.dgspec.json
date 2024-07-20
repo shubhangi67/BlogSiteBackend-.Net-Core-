@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {}
+    "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {}
   },
   "projects": {
-    "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {
+    "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
+        "projectUniqueName": "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
         "projectName": "BlogSite",
-        "projectPath": "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
+        "projectPath": "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\BlogSite.csproj",
         "packagesPath": "C:\\Users\\Shubhangi\\.nuget\\packages\\",
-        "outputPath": "f:\\FullStack Projects\\BlogSite Project\\BlogSite\\obj\\",
+        "outputPath": "F:\\FullStack Projects\\BlogSite Project\\BlogSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shubhangi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EmailValidation": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -79,6 +83,10 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[9.0.0-preview.6.24327.7, )"
+            },
+            "SmtpServer": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

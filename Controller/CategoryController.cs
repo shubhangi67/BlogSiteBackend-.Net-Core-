@@ -1,5 +1,6 @@
 using BlogSite.Service;
 using BlogSite.ViewModel.Category;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogSite.Controller
