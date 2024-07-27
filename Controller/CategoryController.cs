@@ -7,7 +7,7 @@ namespace BlogSite.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         private readonly CategoryService _categoryService;

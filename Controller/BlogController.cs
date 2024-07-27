@@ -7,7 +7,7 @@ namespace BlogSite.Controller
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     public class BlogController : ControllerBase
     {
         private readonly BlogService _blogService;

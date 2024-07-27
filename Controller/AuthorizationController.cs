@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using BlogSite.Service;
 using BlogSite.ViewModel.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ namespace BlogSite.Controller
     [Route("api/[controller]")]
     public class AuthorizationController : ControllerBase
     {
-         private readonly AuthorizationService _authorizationService;
+        private readonly AuthorizationService _authorizationService;
 
         public AuthorizationController(AuthorizationService authorizationService)
         {
@@ -18,7 +19,14 @@ namespace BlogSite.Controller
         [HttpPost]
         public async Task<IActionResult> LoginIn([FromBody] LoginRequestViewModel input)
         {
-            return Ok(await _authorizationService.LoginIn(input));
+            var result = await _authorizationService.LoginIn(input);
+            if (result == null)
+            {
+                return Unauthorized(
+
+                );
+            }
+            return Ok(result);
         }
 
         [HttpPost]
